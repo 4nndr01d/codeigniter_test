@@ -43,11 +43,11 @@
                     <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
 
                         <ul class="nav nav-pills">
-                            <li class="active"> <a href="/">Главная</a> </li>
-                            <li> <a href="/movies/type/films/">Фильмы</a> </li>
-                            <li> <a href="/movies/type/serials/">Сериалы</a> </li>
-                            <li> <a href="/rating.html">Рейтинг фильмов</a> </li>
-                            <li> <a href="/contacts.html">Контакты</a> </li>
+                            <li <?= show_active_menu(0); ?> > <a href="/">Главная</a> </li>
+                            <li <?= show_active_menu('films'); ?> > <a href="/movies/type/films/">Фильмы</a> </li>
+                            <li <?= show_active_menu('serials'); ?> > <a href="/movies/type/serials/">Сериалы</a> </li>
+                            <li <?= show_active_menu('rating'); ?> > <a href="/rating/">Рейтинг фильмов</a> </li>
+                            <li <?= show_active_menu('contact'); ?> > <a href="/contact/">Контакты</a> </li>
                         </ul>
                     </div>
                 </div>
