@@ -36,6 +36,11 @@ class News extends MY_Controller
 
     public function create()
     {
+        if(!$this->dx_auth->is_admin()){
+            $this->load->helper("url_helper");
+            redirect("/", "location");
+        }
+
         $this->data['title'] = 'Добавить новость';
         if ($this->input->post('slug') && $this->input->post('title') && $this->input->post('text')) {
 

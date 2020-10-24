@@ -29,30 +29,19 @@
 
                     <hr>
 
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            <i class="glyphicon glyphicon-user"></i>
-                            <span>Сергей</span>
-                        </div>
-                        <div class="panel-body">
-                            Отличный фильм
-                        </div>
-                    </div>
+                    <?php foreach ($comments as $comment){?>
 
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <i class="glyphicon glyphicon-user"></i>
-                            <span>Максим</span>
+                            <span><?= getUserNameById($comment['user_id'])->username; ?></span>
                         </div>
                         <div class="panel-body">
-                            Поддерживаю, фильм реально крутой
+                            <?= $comment['comment_text']; ?>
                         </div>
                     </div>
-                    
+                    <?php }?>
                     <form >
-                        <div class="form-group">
-                            <input type="text" placeholder="Ваше Имя" class="form-control input-lg">
-                        </div>
 
                         <div class="form-group" >
                             <textarea class="form-control"></textarea>

@@ -21,3 +21,15 @@ if(!function_exists("show_active_menu")){
         return $result;
     }
 }
+
+if(!function_exists("getUserNameById")){
+    function getUserNameById($id){
+        $ci = & get_instance();
+
+        $ci->load->model('dx_auth/users');
+        $query = $ci->users->get_user_by_id($id);
+        $result = $query->row();
+
+        return $result;
+    }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="112e0d64-f4ee-4bc5-82d8-6889de04570f" name="my_host" url="http://f0479063.xsph.ru/">
+        <fileTransfer rootFolder="/domains/f0479063.xsph.ru/public_html" host="f0479063.xsph.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="0130ce59-146c-443f-9b61-bf46fac49bf7" name="sigmasms.ru" url="http://sigmasms.ru">
+        <fileTransfer rootFolder="/public_html" host="sigmasms.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
